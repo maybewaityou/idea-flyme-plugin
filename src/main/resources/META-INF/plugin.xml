@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>online.zero2hero.flyme</id>
+    <name>flyme</name>
+    <vendor email="maybewaityou@gmail.com" url="http://www.zero2hero.online">Zero2Hero</vendor>
+
+    <description><![CDATA[Dart & Flutter snippet. Flyme toolchain.]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
+        <liveTemplateContext implementation="FlutterContext"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

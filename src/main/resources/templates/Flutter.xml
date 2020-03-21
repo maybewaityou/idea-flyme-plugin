@@ -1,0 +1,260 @@
+<templateSet group="MeePwn-Flutter">
+    <template name="builder" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="builder2" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, $MODEL_TYLE_2$ $MODEL_NAME_2$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function with 2 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="builder3" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, $MODEL_TYLE_2$ $MODEL_NAME_2$Model, $MODEL_TYLE_3$ $MODEL_NAME_3$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function with 3 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="builder4" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, $MODEL_TYLE_2$ $MODEL_NAME_2$Model, $MODEL_TYLE_3$ $MODEL_NAME_3$Model, $MODEL_TYLE_4$ $MODEL_NAME_4$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function with 4 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="builder5" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, $MODEL_TYLE_2$ $MODEL_NAME_2$Model, $MODEL_TYLE_3$ $MODEL_NAME_3$Model, $MODEL_TYLE_4$ $MODEL_NAME_4$Model, $MODEL_TYLE_5$ $MODEL_NAME_5$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function with 5 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="provider" value="ModelProvider&lt;$MODEL_NAME$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="provider2" value="ModelProvider2&lt;$MODEL_NAME$, $MODEL_NAME_2$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    model2: $MODEL_NAME_2$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider with 2 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="provider3" value="ModelProvider3&lt;$MODEL_NAME$, $MODEL_NAME_2$, $MODEL_NAME_3$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    model2: $MODEL_NAME_2$(),&#10;    model3: $MODEL_NAME_3$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider with 3 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="provider4" value="ModelProvider4&lt;$MODEL_NAME$, $MODEL_NAME_2$, $MODEL_NAME_3$, $MODEL_NAME_4$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    model2: $MODEL_NAME_2$(),&#10;    model3: $MODEL_NAME_3$(),&#10;    model4: $MODEL_NAME_4$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider with 4 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="provider5" value="ModelProvider5&lt;$MODEL_NAME$, $MODEL_NAME_2$, $MODEL_NAME_3$, $MODEL_NAME_4$, $MODEL_NAME_5$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    model2: $MODEL_NAME_2$(),&#10;    model3: $MODEL_NAME_3$(),&#10;    model4: $MODEL_NAME_4$(),&#10;    model5: $MODEL_NAME_5$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider with 5 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="builder6" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$Model, $MODEL_TYLE_2$ $MODEL_NAME_2$Model, $MODEL_TYLE_3$ $MODEL_NAME_3$Model, $MODEL_TYLE_4$ $MODEL_NAME_4$Model, $MODEL_TYLE_5$ $MODEL_NAME_5$Model, $MODEL_TYLE_6$ $MODEL_NAME_6$Model, __) {&#10;  return $WIDGET$;&#10;}" description="create builder function with 6 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_TYLE_6" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_6" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="provider6" value="ModelProvider6&lt;$MODEL_NAME$, $MODEL_NAME_2$, $MODEL_NAME_3$, $MODEL_NAME_4$, $MODEL_NAME_5$, $MODEL_NAME_6$&gt;(&#10;    model: $MODEL_NAME$(),&#10;    model2: $MODEL_NAME_2$(),&#10;    model3: $MODEL_NAME_3$(),&#10;    model4: $MODEL_NAME_4$(),&#10;    model5: $MODEL_NAME_5$(),&#10;    model6: $MODEL_NAME_6$(),&#10;    builder: $VIEW_BUILDER$);$END$" description="create model provider with 6 view models" toReformat="false" toShortenFQNames="true">
+        <variable name="MODEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_4" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_5" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="MODEL_NAME_6" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VIEW_BUILDER" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="stless" value="class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="create stateless widget" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="stful" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="create stateful widget" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="oc" value="$NAME$.of(context)" description="something from an InheritedWidget" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="stanim" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt; with SingleTickerProviderStateMixin {&#10;  AnimationController _controller;&#10;&#10;  @override&#10;  void initState() {&#10;    _controller = AnimationController(vsync: this);&#10;    super.initState();&#10;  }&#10;&#10;  @override&#10;  void dispose() {&#10;    _controller.dispose();&#10;    super.dispose();&#10;  }&#10;  &#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="create stateful widget with AnimationController" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="mi" value="import '$NAME$';" description="import" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="mifunc" value="import 'package:$PROJECT$/core/utils/function/functional.dart';" description="import functional utils" toReformat="false" toShortenFQNames="true">
+        <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="dprops" value="Property(name: '$NAME$', type: $TYPE$)," description="Properties for ViewModel" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="funcw" value="@widget&#10;Widget $VIEW$(BuildContext context) {&#10;  return $WIDGET$;&#10;}" description="functional widget" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="&quot;widgetName&quot;" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="funcwp" value="@widget&#10;Widget $VIEW$(BuildContext context, {$PARAMS$}) {&#10;  return $WIDGET$;&#10;}" description="functional widget with props" toReformat="false" toShortenFQNames="true">
+        <variable name="VIEW" expression="" defaultValue="&quot;widgetName&quot;" alwaysStopAt="true" />
+        <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="mip" value="import 'package:$PROJECT$';" description="import package" toReformat="false" toShortenFQNames="true">
+        <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="mipm" value="import 'package:flutter/material.dart';" description="import flutter material package" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="mirx" value="import 'package:rxdart/rxdart.dart';" description="import rxdart package" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="funion" value="@freezed&#10;abstract class $UNION$ with _$$$UNION$ {&#10;  const factory $UNION$.$FUNCTION_NAME$() = $INSTANCE$;&#10;}" description="freezed union class" toReformat="false" toShortenFQNames="true">
+        <variable name="UNION" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
+        <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="fdataclass" value="@immutable&#10;abstract class $DATA_CLASS$ with _$$$DATA_CLASS$ {&#10;  const factory $DATA_CLASS$() = $INSTANCE$;&#10;}" description="freezed data class" toReformat="false" toShortenFQNames="true">
+        <variable name="DATA_CLASS" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
+        <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="funioncase" value="const factory $UNION$.$FUNCTION_NAME$() = $INSTANCE$;" description="freezed union case" toReformat="false" toShortenFQNames="true">
+        <variable name="UNION" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+        <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+            <option name="DART_STATEMENT" value="false" />
+            <option name="DART_TOPLEVEL" value="false" />
+        </context>
+    </template>
+    <template name="ptf" value="part '$FILE_NAME$.freezed.dart';" description="part freezed statement" toReformat="false" toShortenFQNames="true">
+        <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <template name="pts" value="part '$FILE_NAME$.g.dart';" description="part statement" toReformat="false" toShortenFQNames="true">
+        <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+</templateSet>
