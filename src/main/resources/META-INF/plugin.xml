@@ -17,25 +17,30 @@
 
     <actions>
         <!-- Add your actions here -->
-        <group id="flyme" class="action.ActionGroup" icon="AllIcons.Actions.Forward">
+        <group id="flyme" class="action.ActionGroup" text="flyme" popup="true" icon="AllIcons.Actions.ShowAsTree">
             <add-to-group group-id="NavBarToolBar" anchor="first"/>
-            <action id="create_use_case_action" class="action.CreateUseCaseAction" text="create a new use case">
+            <action id="create_use_case_action" class="action.CreateUseCaseAction" text="create a new use case"
+                    icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
-            <action id="create_page_action" class="action.CreatePageAction" text="create a new page">
+            <action id="create_page_action" class="action.CreatePageAction" text="create a new page"
+                    icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
-            <action id="create_feature_action" class="action.CreateFeatureAction" text="create a new feature">
+            <action id="create_feature_action" class="action.CreateFeatureAction" text="create a new feature"
+                    icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
             <action id="create_native_plugin_action" class="action.CreateNativePluginAction"
-                    text="create a new native plugin">
+                    text="create a new native plugin" icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
-            <action id="create_package_action" class="action.CreatePackageAction" text="create a new package">
+            <action id="create_package_action" class="action.CreatePackageAction" text="create a new package"
+                    icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
-            <action id="create_project_action" class="action.CreateProjectAction" text="create a new project">
+            <action id="create_project_action" class="action.CreateProjectAction" text="create a new project"
+                    icon="AllIcons.Actions.NewFolder">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
         </group>
