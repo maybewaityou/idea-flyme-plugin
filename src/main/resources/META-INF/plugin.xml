@@ -11,8 +11,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
-        <liveTemplateContext implementation="FlutterContext"/>
+        <defaultLiveTemplatesProvider implementation="snippet.FlutterTemplateProvider"/>
+        <liveTemplateContext implementation="snippet.FlutterContext"/>
     </extensions>
 
     <actions>
