@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>online.zero2hero.flyme</id>
-    <name>flyme</name>
-    <vendor email="maybewaityou@gmail.com" url="http://www.zero2hero.online">Zero2Hero</vendor>
+    <name>Flyme</name>
+    <vendor email="maybewaityou@gmail.com">Zero2Hero</vendor>
 
     <description><![CDATA[Dart & Flutter snippet. Flyme toolchain.]]></description>
 
