@@ -17,5 +17,23 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="create_use_case_action" class="action.CreateUseCaseAction" text="create a new use case" description="create a new use case.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="create_page_action" class="action.CreatePageAction" text="create a new page" description="create a new page.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="create_feature_action" class="action.CreateFeatureAction" text="create a new feature" description="create a new feature.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="create_native_plugin_action" class="action.CreateNativePluginAction" text="create a new native plugin" description="create a new native plugin.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="create_package_action" class="action.CreatePackageAction" text="create a new package" description="create a new package.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="create_project_action" class="action.CreateProjectAction" text="create a new project" description="create a new project.">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
