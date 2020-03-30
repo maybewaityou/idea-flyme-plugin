@@ -19,6 +19,7 @@
         <!-- Add your actions here -->
         <group id="flyme" class="action.ActionGroup" text="Flyme" popup="true" icon="AllIcons.Actions.GroupBy">
             <add-to-group group-id="NavBarToolBar" anchor="first"/>
+            <separator/>
             <action id="create_use_case_action" class="action.CreateUseCaseAction" text="Generate UseCase">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
@@ -32,12 +33,14 @@
                     text="Generate Native Plugin">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
+            <separator/>
             <action id="create_package_action" class="action.CreatePackageAction" text="Generate Package">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
             <action id="create_project_action" class="action.CreateProjectAction" text="Generate Project">
                 <add-to-group group-id="GenerateGroup" anchor="last"/>
             </action>
+            <separator/>
         </group>
     </actions>
 </idea-plugin>
