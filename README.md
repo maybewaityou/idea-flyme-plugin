@@ -8,26 +8,26 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 
 | Shortcut      | Description               |
 | ------------- | ------------------------- |
-| `afunc`       | function in one line      |
-| `arrow`       | simple function           |
-| `asdasd`      | simple print              |
-| `asdasdasd`   | simple print with params  |
-| `cdatasource` | create data source        |
-| `clocal`      | create local data source  |
-| `cremote`     | create remote data source |
-| `crepository` | create repository         |
-| `cstream`     | create values             |
-| `cusecase`    | create use case           |
-| `cvm`         | create view model         |
-| `func`        | create function           |
-| `handleFunc`  | create handle function    |
-| `init`        | init function             |
+| afunc       | function in one line      |
+| arrow       | simple function           |
+| asdasd      | simple print              |
+| asdasdasd   | simple print with params  |
+| cdatasource | create data source        |
+| clocal      | create local data source  |
+| cremote     | create remote data source |
+| crepository | create repository         |
+| cstream     | create values             |
+| cusecase    | create use case           |
+| cvm         | create view model         |
+| func        | create function           |
+| handleFunc  | create handle function    |
+| init        | init function             |
 
 ### Flutter
 
 | Shortcut   | Description                                     |
 | ---------- | ----------------------------------------------- |
-| `builder`  | create builder function                         |
+| builder  | create builder function                         |
 | builder2   | create builder function with 2 view models      |
 | builder3   | create builder function with 3 view models      |
 | builder4   | create builder function with 4 view models      |
