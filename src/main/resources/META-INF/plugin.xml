@@ -4,7 +4,7 @@
     <vendor email="maybewaityou@gmail.com">Zero2Hero</vendor>
 
     <description>
-        <![CDATA[Flyme toolchain. Dart & Flutter snippet, please <a href="https://github.com/maybewaityou/idea-flyme-plugin/README.md">visit here</a>]]></description>
+        <![CDATA[Flyme toolchain. Dart & Flutter snippet, please <a href="https://github.com/maybewaityou/idea-flyme-plugin/blob/master/README.md">visit here</a>]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
