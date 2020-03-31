@@ -16,6 +16,8 @@ You can search `Flyme` from https://plugins.jetbrains.com, and download the `Fly
 
  Preferences -> Plugins -> Install Plugin Form Disk, select flyme-xxxx.zip, and restart IDE.
 
+![image](images/tmp-20200401-055632.png)
+
 ## Available Snippets
 
 ### Dart
