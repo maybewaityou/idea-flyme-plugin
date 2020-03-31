@@ -42,7 +42,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 | funion     | freezed union class                             |
 | funioncase | freezed union case                              |
 | mi         | import                                          |
-| mifunc     | import functional utils                         |
+| mifunc     | import functional main.utils                         |
 | mip        | import package                                  |
 | mipm       | import flutter material package                 |
 | mirx       | import rxdart package                           |

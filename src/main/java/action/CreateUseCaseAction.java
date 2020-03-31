@@ -7,9 +7,9 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.samskivert.mustache.Mustache;
 import com.samskivert.mustache.Template;
-import constant.Constant;
+import main.constant.Constant;
 import org.jetbrains.annotations.NotNull;
-import utils.ProjectUtils;
+import main.utils.ProjectUtils;
 
 import java.util.HashMap;
 import java.util.Map;

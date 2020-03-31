@@ -176,7 +176,7 @@
             <option name="DART_TOPLEVEL" value="true" />
         </context>
     </template>
-    <template name="mifunc" value="import 'package:$PROJECT$/core/utils/function/functional.dart';" description="import functional utils" toReformat="false" toShortenFQNames="true">
+    <template name="mifunc" value="import 'package:$PROJECT$/core/main.utils/function/functional.dart';" description="import functional main.utils" toReformat="false" toShortenFQNames="true">
         <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_TOPLEVEL" value="true" />
