@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>online.zero2hero.flyme</id>
     <name>Flyme</name>
-    <vendor email="maybewaityou@gmail.com">MeePwn</vendor>
+    <vendor email="maybewaityou@gmail.com">Zero2Hero</vendor>
 
     <description>
         <![CDATA[Flyme toolchain. Dart & Flutter snippet, please <a href="https://github.com/maybewaityou/idea-flyme-plugin/blob/master/README.md">visit here</a>]]></description>
