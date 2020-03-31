@@ -4,6 +4,18 @@ Flyme toolchain.
 
 An Intellij & Android Studio plugin that adds Live Templates to your IDE saving time writing the boilerplate in Flutter.
 
+## Install
+
+### Automaticly
+
+You can search `Flyme` in Preferences -> Plugins Marketplace.
+
+### Manually
+
+You can search `Flyme` from https://plugins.jetbrains.com, and download the `Flyme` plugin.
+
+ Preferences -> Plugins -> Install Plugin Form Disk, select flyme-xxxx.zip, and restart IDE.
+
 ## Available Snippets
 
 ### Dart
