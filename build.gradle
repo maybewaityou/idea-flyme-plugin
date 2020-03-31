@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'online.zero2hero'
-version '0.1.1'
+version '0.1.2'
 
 sourceCompatibility = 1.8
 
@@ -23,13 +23,13 @@ intellij {
 }
 publishPlugin {
     token 'perm:bWF5YmV3YWl0eW91.OTItMTkxMg==.8yWliZ47AGQWs0vp20GUG0EXv4RuR9'
-    channels 'nightly'
+    channels 'stable'
 }
 patchPluginXml {
 //    changeNotes """
 //      Add change notes here.<br>
 //      <em>most HTML tags may be used</em>"""
     changeNotes """
-        initial alpha release
+        add Dart and Flutter snippets.
     """
 }
