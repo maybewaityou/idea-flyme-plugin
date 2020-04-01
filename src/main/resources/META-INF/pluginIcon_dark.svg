@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="104px" viewBox="0 0 148 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>自定义预设</title>
+    <desc>Created with Sketch.</desc>
+    <g id="自定义预设" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="路径-9" fill="#31CEBD" points="67.0816702 67 66 103.523912 70.8788855 96.3552651 74.0408351 103.523912 81 103.523912"></polygon>
+        <polygon id="路径-8" fill="#31CEBD" points="79.679235 79.368475 84.1223075 79.368475 106.330556 93.044688 102 102 87.7152528 93.044688 93.5466785 102 79.679235 102"></polygon>
+        <polyline id="路径-7" fill="#54DFCD" points="109.5 47.1876088 108.5 62.652335 84.5114704 78.8025346 77.679235 82.368475 71.2455133 70.9334464 91.5466785 44.1463975"></polyline>
+        <polygon id="路径-6" fill="#59BFF9" points="11.2158149 57.6715323 47.4276629 48.1876088 69.8117915 69.4760885"></polygon>
+        <polygon id="路径-10" fill="#59BFF9" points="45.8655906 49.1876088 77.5 33.9668803 0.5 0.187608839"></polygon>
+        <path d="" id="路径-11"></path>
+        <polygon id="路径-12" fill="#228CCD" points="78 32.9668803 67.8117915 69.4760885 46.8655906 48.1876088"></polygon>
+        <polygon id="路径-13" fill="#29A6E2" points="77.896751 32.9334464 92.8117915 44.8108505 72.4017589 70.9334464 67.8117915 68.5370432"></polygon>
+        <polyline id="路径-5" fill="#31CEBD" points="91.5466785 44.8128033 109.533792 48.1876088 120.546678 31.8888983 109.533792 30.1876088 93.5036766 36.3276631"></polyline>
+        <polygon id="路径-14" fill="#228CCD" points="77 33.4668803 86.2152528 28.4308207 94.0229409 35.7886091 92.5466785 45.1463975"></polygon>
+        <path d="" id="路径-15"></path>
+        <polyline id="路径" fill="#29A6E2" points="93.0229409 36.7886091 85.7152528 28.9308207 101.910505 17.4318345 122.945859 27.9308207"></polyline>
+        <path d="" id="路径-2"></path>
+        <polygon id="路径-3" fill="#0D569A" points="109.5 31.3461538 120.186404 33.5 147.5 26.5 122.571808 27.5024223"></polygon>
+        <polygon id="路径-4" fill="#228CCD" points="66.679235 68.9663663 79.679235 101.966366 79.679235 81.1262258 73.179235 68.9663663"></polygon>
+        <line x1="93.5" y1="36.5" x2="102.5" y2="33.5" id="直线" stroke="#0D569A" stroke-width="2" fill="#0D569A" stroke-linecap="square"></line>
+        <circle id="椭圆形" fill="#0D569A" cx="106.5" cy="31.5" r="4.5"></circle>
+    </g>
+</svg>
