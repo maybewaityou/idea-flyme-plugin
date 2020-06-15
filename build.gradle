@@ -36,6 +36,6 @@ patchPluginXml {
 //      Add change notes here.<br>
 //      <em>most HTML tags may be used</em>"""
     changeNotes """
-        add Android Studio supported.
+        add Android Studio 3.5.2 supported.
     """
 }
