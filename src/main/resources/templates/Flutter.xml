@@ -220,29 +220,11 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="funion" value="@freezed&#10;abstract class $UNION$ with _$$$UNION$ {&#10;  const factory $UNION$.$FUNCTION_NAME$() = $INSTANCE$;&#10;}" description="freezed union class" toReformat="false" toShortenFQNames="true">
-    <variable name="UNION" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
-    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="DART_TOPLEVEL" value="true" />
-    </context>
-  </template>
   <template name="fdataclass" value="@immutable&#10;abstract class $DATA_CLASS$ with _$$$DATA_CLASS$ {&#10;  const factory $DATA_CLASS$() = $INSTANCE$;&#10;}" description="freezed data class" toReformat="false" toShortenFQNames="true">
     <variable name="DATA_CLASS" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
     <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
-    </context>
-  </template>
-  <template name="funioncase" value="const factory $UNION$.$FUNCTION_NAME$() = $INSTANCE$;" description="freezed union case" toReformat="false" toShortenFQNames="true">
-    <variable name="UNION" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
-    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="DART" value="true" />
-      <option name="DART_STATEMENT" value="false" />
-      <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
   <template name="ptf" value="part '$FILE_NAME$.freezed.dart';" description="part freezed statement" toReformat="false" toShortenFQNames="true">
@@ -255,6 +237,38 @@
     <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="funion" value="@freezed&#10;abstract class $UNION$ with _$$$UNION$ {&#10;  const factory $UNION$.$FUNCTION_NAME$() = _$INSTANCE$;&#10;}" description="freezed union class" toReformat="false" toShortenFQNames="true">
+    <variable name="UNION" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="funioncase" value="const factory $UNION$.$FUNCTION_NAME$() = _$INSTANCE$;" description="freezed union case" toReformat="false" toShortenFQNames="true">
+    <variable name="UNION" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
+  <template name="miextension" value="import 'package:$PROJECT$/common/extension/extension.dart';" description="import extension" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="dviewobject" value="Property(&#10;  name: 'viewObject',&#10;  type: $TYPE$,&#10;  initial: '$TYPE$.initial()',&#10;)," description="define a view object" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
 </templateSet>
