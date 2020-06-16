@@ -1,4 +1,4 @@
-<templateSet group="MeePwn-Flutter">
+<templateSet group="Flyme-Flutter">
   <template name="builder" value="Widget $VIEW$Builder(BuildContext context, $MODEL_TYLE$ $MODEL_NAME$ViewModel, _) {&#10;  return $WIDGET$;&#10;}" description="create builder function" toReformat="false" toShortenFQNames="true">
     <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODEL_TYLE" expression="" defaultValue="" alwaysStopAt="true" />

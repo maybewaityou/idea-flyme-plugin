@@ -1,4 +1,4 @@
-<templateSet group="MeePwn-Dart">
+<templateSet group="Flyme-Dart">
   <template name="asdasdasd" value="print('== $DESC$ ===&gt;&gt;&gt;&gt; ${$VALUE$}');&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -11,6 +11,75 @@
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="asddsa" value="print('== $DESC$ ===&gt;&gt;&gt;&gt; ${$VALUE$}');&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="ctranslator" value="class $MODULE_UPPERCASE$Translator extends DataModelTranslator&lt;$MODULE_UPPERCASE$&gt; {&#10;  $MODULE_UPPERCASE$Translator._();&#10;  factory $MODULE_UPPERCASE$Translator() =&gt; $MODULE_UPPERCASE$Translator._();&#10;&#10;  @override&#10;  $MODULE_UPPERCASE$ translate(Map&lt;String, dynamic&gt; json) {&#10;    return $MODULE_UPPERCASE$.fromJson(json);&#10;  }&#10;}&#10;" description="create a data model translator" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cdatamodel" value="@JsonSerializable()&#10;class $MODULE_UPPERCASE$ extends Equatable implements DataModel {&#10;  const $MODULE_UPPERCASE$();&#10;&#10;  factory $MODULE_UPPERCASE$.fromJson(Map&lt;String, dynamic&gt; json) =&gt; _$$$MODULE_UPPERCASE$FromJson(json);&#10;  Map&lt;String, dynamic&gt; toJson() =&gt; _$$$MODULE_UPPERCASE$ToJson(this);&#10;&#10;  @override&#10;  List&lt;Object&gt; get props =&gt; [];&#10;}&#10;" description="create a data model" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cviewobj" value="import 'package:$PROJECT$/shared/user_interface/model/view_object.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$MODULE_LOWERCASE$.freezed.dart';&#10;&#10;@freezed&#10;abstract class $MODULE_UPPERCASE$ with _$$$MODULE_UPPERCASE$ implements IViewObject {&#10;  const factory $MODULE_UPPERCASE$.viewObject() = _ViewObject;&#10;  const factory $MODULE_UPPERCASE$.loading() = _ViewLoading;&#10;  const factory $MODULE_UPPERCASE$.error({@required String errorMessage}) = _ViewError;&#10;&#10;  factory $MODULE_UPPERCASE$.initial() =&gt; $MODULE_UPPERCASE$.viewObject();&#10;}&#10;" description="create a view object" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWERCASE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="fromdm" value="factory $MODEL_UPPERCASE$ViewObject.fromDataModel($DATA_MODEL_UPPERCASE$ model) =&gt;&#10;    $MODEL_UPPERCASE$ViewObject.viewObject(&#10;      $END$&#10;    );" description="factory constructor from data model" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA_MODEL_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
+  <template name="cvaluefailure" value="import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part 'failure.freezed.dart';&#10;&#10;@freezed&#10;abstract class ValueFailure&lt;T&gt; with _$ValueFailure&lt;T&gt; {&#10;  const factory ValueFailure.invalidValue({&#10;    @required String failedValue,&#10;  }) = _InvalidValue&lt;T&gt;;&#10;}&#10;" description="create a value failure" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cdto" value="import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$MODEL_LOWERCASE$.dart';&#10;import 'package:$PROJECT$/shared/infrastructure/infrastructure.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$DTO_LOWERCASE$.freezed.dart';&#10;part '$DTO_LOWERCASE$.g.dart';&#10;&#10;@freezed&#10;abstract class $DTO_UPPERCASE$ with _$$$DTO_UPPERCASE$ implements Dto {&#10;  factory $DTO_UPPERCASE$() = _$DTO_UPPERCASE$;&#10;  factory $DTO_UPPERCASE$.fromDomain($MODEL_UPPERCASE$ entity) =&gt; $DTO_UPPERCASE$();&#10;&#10;  factory $DTO_UPPERCASE$.fromJson(Map&lt;String, dynamic&gt; json) =&gt;&#10;      _$$$DTO_UPPERCASE$FromJson(json);&#10;}&#10;" description="create a data transformer object" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTO_LOWERCASE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTO_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cfunctionvalidator" value="Either&lt;ValueFailure&lt;$TYPE$&gt;, $TYPE$&gt; validate$NAME$($TYPE$ input) {&#10;  // 校验规则&#10;  if ($PREDICATE$) {&#10;    return right(input);&#10;  }&#10;&#10;  return left(ValueFailure.invalidValue(failedValue: input));&#10;}&#10;" description="create a function validator" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PREDICATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cclassvalidator" value="import 'package:dartz/dartz.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$ENTITY$.dart';&#10;import 'package:$PROJECT$/shared/domain/validator/validator.dart';&#10;&#10;class $ENTITY_NAME$Validator extends Validator {&#10;  final $ENTITY_NAME$ _entity;&#10;&#10;  $ENTITY_NAME$Validator(this._entity) : super();&#10;&#10;  @override&#10;  Option&lt;String&gt; validate() {&#10;    // TODO: 校验规则&#10;//    return some('entity is error : $_entity');&#10;    return none();&#10;  }&#10;}&#10;" description="create a validator class" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
   <template name="cremote" value="import 'package:$PROJECT$/common/service/network_service.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/repository/repository.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$DataSource implements I$REPOSITORY_UPPERCASE$Repository {}&#10;&#10;//@named&#10;@LazySingleton(as: I$MODULE_UPPERCASE$DataSource)&#10;class $MODULE_UPPERCASE$DataSource implements I$MODULE_UPPERCASE$DataSource {&#10;  final NetworkService _service;&#10;&#10;  const $MODULE_UPPERCASE$DataSource(this._service);&#10;}&#10;" description="create a remote data source" toReformat="false" toShortenFQNames="true">
@@ -31,19 +100,20 @@
         <option name="DART_TOPLEVEL" value="true" />
       </context>
   </template>
-  <template name="cdatasource" value="import 'package:$PROJECT$/common/utils/function/functional.dart';&#10;&#10;abstract class $MODULE_UPPERCASE$DataSource {}&#10;" description="create data source" toReformat="false" toShortenFQNames="true">
-    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODULE_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="DART_TOPLEVEL" value="true" />
-    </context>
-  </template>
   <template name="crepository" value="import 'package:$PROJECT$/shared/domain/repository/repository.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IRepository {}&#10;" description="create a repository" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
       <context>
         <option name="DART_TOPLEVEL" value="true" />
       </context>
+  </template>
+  <template name="crepositoryimpl" value="import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/repository/repository.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/infrastructure/data_source/local/$MODULE_LOWERCASE$_local.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/infrastructure/data_source/remote/$MODULE_LOWERCASE$_remote.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;//@named&#10;@LazySingleton(as: I$MODULE_UPPERCASE$Repository)&#10;class $MODULE_UPPERCASE$Repository implements I$MODULE_UPPERCASE$Repository {&#10;  final I$MODULE_UPPERCASE$LocalDataSource _localDataSource;&#10;  final I$MODULE_UPPERCASE$RemoteDataSource _remoteDataSource;&#10;&#10;  const $MODULE_UPPERCASE$Repository(this._localDataSource, this._remoteDataSource);&#10;}&#10;" description="create a repository implement" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_UPPERCASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
   </template>
   <template name="cusecase" value="import 'package:$PROJECT$/shared/application/use_case/use_case.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/repository/repository.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IUseCase {}&#10;&#10;@LazySingleton(as: I$MODULE_UPPERCASE$)&#10;class $MODULE_UPPERCASE$ implements I$MODULE_UPPERCASE$ {&#10;  final I$REGISTORY_UPPERCASE$Repository repository;&#10;&#10;  const $MODULE_UPPERCASE$(this.repository);&#10;}&#10;" description="create a use case" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />

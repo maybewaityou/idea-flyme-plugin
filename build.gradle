@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'online.zero2hero'
-version '0.1.6'
+version '0.1.7'
 
 sourceCompatibility = 1.8
 
@@ -19,8 +19,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-//    version '192.7142.36'
-    version '191.8026.42'
+    version '192.7142.36'
     type 'IC'
     plugins 'android'
 }
@@ -36,6 +35,6 @@ patchPluginXml {
 //      Add change notes here.<br>
 //      <em>most HTML tags may be used</em>"""
     changeNotes """
-        add Android Studio 3.5.2 supported.
+        add Android Studio 3.6.3 supported.
     """
 }
