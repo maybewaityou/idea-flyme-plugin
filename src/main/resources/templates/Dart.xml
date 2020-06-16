@@ -32,7 +32,7 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="cviewobj" value="import 'package:$PROJECT$/shared/user_interface/model/view_object.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$MODULE_LOWERCASE$.freezed.dart';&#10;&#10;@freezed&#10;abstract class $MODULE_UPPERCASE$ with _$$$MODULE_UPPERCASE$ implements IViewObject {&#10;  const factory $MODULE_UPPERCASE$.viewObject() = _ViewObject;&#10;  const factory $MODULE_UPPERCASE$.loading() = _ViewLoading;&#10;  const factory $MODULE_UPPERCASE$.error({@required String errorMessage}) = _ViewError;&#10;&#10;  factory $MODULE_UPPERCASE$.initial() =&gt; $MODULE_UPPERCASE$.viewObject();&#10;}&#10;" description="create a view object" toReformat="false" toShortenFQNames="true">
+  <template name="cviewobj" value="import 'package:flyme_ddd/flyme_ddd.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$MODULE_LOWERCASE$.freezed.dart';&#10;&#10;@freezed&#10;abstract class $MODULE_UPPERCASE$ with _$$$MODULE_UPPERCASE$ implements IViewObject {&#10;  const factory $MODULE_UPPERCASE$.viewObject() = _ViewObject;&#10;  const factory $MODULE_UPPERCASE$.loading() = _ViewLoading;&#10;  const factory $MODULE_UPPERCASE$.error({@required String errorMessage}) = _ViewError;&#10;&#10;  factory $MODULE_UPPERCASE$.initial() =&gt; $MODULE_UPPERCASE$.viewObject();&#10;}&#10;" description="create a view object" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_LOWERCASE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
@@ -54,7 +54,7 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="cdto" value="import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$MODEL_LOWERCASE$.dart';&#10;import 'package:$PROJECT$/shared/infrastructure/infrastructure.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$DTO_LOWERCASE$.freezed.dart';&#10;part '$DTO_LOWERCASE$.g.dart';&#10;&#10;@freezed&#10;abstract class $DTO_UPPERCASE$ with _$$$DTO_UPPERCASE$ implements Dto {&#10;  factory $DTO_UPPERCASE$() = _$DTO_UPPERCASE$;&#10;  factory $DTO_UPPERCASE$.fromDomain($MODEL_UPPERCASE$ entity) =&gt; $DTO_UPPERCASE$();&#10;&#10;  factory $DTO_UPPERCASE$.fromJson(Map&lt;String, dynamic&gt; json) =&gt;&#10;      _$$$DTO_UPPERCASE$FromJson(json);&#10;}&#10;" description="create a data transformer object" toReformat="false" toShortenFQNames="true">
+  <template name="cdto" value="import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$MODEL_LOWERCASE$.dart';&#10;import 'package:flyme_ddd/flyme_ddd.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$DTO_LOWERCASE$.freezed.dart';&#10;part '$DTO_LOWERCASE$.g.dart';&#10;&#10;@freezed&#10;abstract class $DTO_UPPERCASE$ with _$$$DTO_UPPERCASE$ implements Dto {&#10;  factory $DTO_UPPERCASE$() = _$DTO_UPPERCASE$;&#10;  factory $DTO_UPPERCASE$.fromDomain($MODEL_UPPERCASE$ entity) =&gt; $DTO_UPPERCASE$();&#10;&#10;  factory $DTO_UPPERCASE$.fromJson(Map&lt;String, dynamic&gt; json) =&gt;&#10;      _$$$DTO_UPPERCASE$FromJson(json);&#10;}&#10;" description="create a data transformer object" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODEL_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -73,7 +73,7 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="cclassvalidator" value="import 'package:dartz/dartz.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$ENTITY$.dart';&#10;import 'package:$PROJECT$/shared/domain/validator/validator.dart';&#10;&#10;class $ENTITY_NAME$Validator extends Validator {&#10;  final $ENTITY_NAME$ _entity;&#10;&#10;  $ENTITY_NAME$Validator(this._entity) : super();&#10;&#10;  @override&#10;  Option&lt;String&gt; validate() {&#10;    // TODO: 校验规则&#10;//    return some('entity is error : $_entity');&#10;    return none();&#10;  }&#10;}&#10;" description="create a validator class" toReformat="false" toShortenFQNames="true">
+  <template name="cclassvalidator" value="import 'package:dartz/dartz.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/model/entity/$ENTITY$.dart';&#10;import 'package:flyme_ddd/flyme_ddd.dart';&#10;&#10;class $ENTITY_NAME$Validator extends Validator {&#10;  final $ENTITY_NAME$ _entity;&#10;&#10;  $ENTITY_NAME$Validator(this._entity) : super();&#10;&#10;  @override&#10;  Option&lt;String&gt; validate() {&#10;    // TODO: 校验规则&#10;//    return some('entity is error : $_entity');&#10;    return none();&#10;  }&#10;}&#10;" description="create a validator class" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
@@ -100,7 +100,7 @@
         <option name="DART_TOPLEVEL" value="true" />
       </context>
   </template>
-  <template name="crepository" value="import 'package:$PROJECT$/shared/domain/repository/repository.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IRepository {}&#10;" description="create a repository" toReformat="false" toShortenFQNames="true">
+  <template name="crepository" value="import 'package:flyme_ddd/flyme_ddd.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IRepository {}&#10;" description="create a repository" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
       <context>
@@ -115,7 +115,7 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="cusecase" value="import 'package:$PROJECT$/shared/application/use_case/use_case.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/repository/repository.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IUseCase {}&#10;&#10;@LazySingleton(as: I$MODULE_UPPERCASE$)&#10;class $MODULE_UPPERCASE$ implements I$MODULE_UPPERCASE$ {&#10;  final I$REGISTORY_UPPERCASE$Repository repository;&#10;&#10;  const $MODULE_UPPERCASE$(this.repository);&#10;}&#10;" description="create a use case" toReformat="false" toShortenFQNames="true">
+  <template name="cusecase" value="import 'package:flyme_ddd/flyme_ddd.dart';&#10;import 'package:$PROJECT$/feature/$MODULE_LOWERCASE$/domain/repository/repository.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;abstract class I$MODULE_UPPERCASE$ implements IUseCase {}&#10;&#10;@LazySingleton(as: I$MODULE_UPPERCASE$)&#10;class $MODULE_UPPERCASE$ implements I$MODULE_UPPERCASE$ {&#10;  final I$REGISTORY_UPPERCASE$Repository repository;&#10;&#10;  const $MODULE_UPPERCASE$(this.repository);&#10;}&#10;" description="create a use case" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_LOWERCASE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
@@ -124,7 +124,7 @@
         <option name="DART_TOPLEVEL" value="true" />
       </context>
   </template>
-  <template name="cvm" value="import 'package:flyme_annotation/flyme_annotation.dart';&#10;import 'package:$PROJECT$/shared/user_interface/view_model/view_model.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;part '$MODULE_LOWERCASE$.g.dart';&#10;&#10;@injectable&#10;@Properties([])&#10;class $MODULE_UPPERCASE$ extends _$ViewModel {&#10;  @override&#10;  void init() {&#10;    print('==== $MODULE_UPPERCASE$ init ====');&#10;  }&#10;}&#10;" description="create a view model" toReformat="false" toShortenFQNames="true">
+  <template name="cvm" value="import 'package:flyme_annotation/flyme_annotation.dart';&#10;import 'package:flyme_ddd/flyme_ddd.dart';&#10;import 'package:injectable/injectable.dart';&#10;&#10;part '$MODULE_LOWERCASE$.g.dart';&#10;&#10;@injectable&#10;@Properties([])&#10;class $MODULE_UPPERCASE$ extends _$ViewModel {&#10;  @override&#10;  void init() {&#10;    print('==== $MODULE_UPPERCASE$ init ====');&#10;  }&#10;}&#10;" description="create a view model" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_LOWERCASE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE_UPPERCASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
