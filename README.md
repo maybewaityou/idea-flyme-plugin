@@ -28,16 +28,25 @@ You can search `Flyme` from https://plugins.jetbrains.com, and download the `Fly
 | arrow       | simple function           |
 | asdasd      | simple print              |
 | asdasdasd   | simple print with params  |
-| cdatasource | create data source        |
-| clocal      | create local data source  |
-| cremote     | create remote data source |
-| crepository | create repository         |
-| cstream     | create values             |
-| cusecase    | create use case           |
-| cvm         | create view model         |
 | func        | create function           |
 | handleFunc  | create handle function    |
 | init        | init function             |
+| cdatamodel  | create a data model       |
+| cdatasource | create a data source        |
+| clocal      | create a local data source  |
+| cremote     | create a remote data source |
+| crepository | create a repository         |
+| cdatamodel  | create data model           |
+| cdto        | create a data transformer object         |
+| ctranslator | create a data model translator           |
+| cfunctionvalidator  | create a function validator      |
+| crepositoryimpl     | create a repository implement    |
+| cvaluefailure  | create a value failure                |
+| cviewobj       | create a view object                  |
+| fromdm      | factory constructor from data model      |
+| cstream     | create values               |
+| cusecase    | create a use case           |
+| cvm         | create a view model         |
 
 ### Flutter
 
@@ -60,6 +69,7 @@ You can search `Flyme` from https://plugins.jetbrains.com, and download the `Fly
 | mip        | import package                                  |
 | mipm       | import flutter material package                 |
 | mirx       | import rxdart package                           |
+| miextension     | import extension             |
 | oc         | something from an InheritedWidget               |
 | provider   | create model provider                           |
 | provider2  | create model provider with 2 view models        |
@@ -81,4 +91,3 @@ You can search `Flyme` from https://plugins.jetbrains.com, and download the `Fly
 - IntelliJ IDEA Ultimate
 - IntelliJ IDEA Community
 - IntelliJ IDEA Educational
-
