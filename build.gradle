@@ -20,6 +20,7 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '192.7142.36'
+//    version '191.8026.42'
     type 'IC'
     plugins 'android'
 }
